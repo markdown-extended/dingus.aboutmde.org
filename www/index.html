@@ -59,11 +59,11 @@ body {
             </div>
             <div class="collapse navbar-collapse" id="page-navbar">
                 <ul class="nav navbar-nav">
-                    <li class=""><a href="http://aboutmde.org">Home</a></li>
+                    <li class=""><a href="http://home.aboutmde.org">Home</a></li>
                     <li class=""><a href="http://manifest.aboutmde.org">Manifest</a></li>
                     <li class="active"><a href="http://dingus.aboutmde.org">Dingus <span class="sr-only">(current)</span></a></li>
                     <li class=""><a href="http://api.aboutmde.org">Online API</a></li>
-                    <li class=""><a href="http://reminders.aboutmde.org">Syntax reminders</a></li>
+                    <li class=""><a href="http://cheatsheet.aboutmde.org">Syntax cheat-sheet</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -210,5 +210,23 @@ $(function() {
 
 </script>
 
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.aboutmde.org"]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.ateliers-pierrot.fr/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 14]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stats.ateliers-pierrot.fr/piwik.php?idsite=14" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
 </body>
 </html>
