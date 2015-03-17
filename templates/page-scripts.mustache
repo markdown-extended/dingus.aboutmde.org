@@ -37,10 +37,7 @@ $(function() {
             scroll: true
         },
         parserOptions: {
-            interface:   'http://api.aboutmde.org/mde-api.php',
-//            interface:   'http://piero.local/GitHub_projects/markdown-extended/api.aboutmde.org/www/mde-api.php',
-//            interface:   'mde-api.php',
-//            interface: 'online', // use this to use the webservice at <http://api.aboutmde.org/> instead of local one
+            interface:   '{{& page.api_interface}}',
             mdeOptions: {
 //                config_file: 'markdown_config.simple.ini'
             }

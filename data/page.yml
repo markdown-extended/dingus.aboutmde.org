@@ -22,3 +22,10 @@ page_active:        dingus
 
 # to show the test reminders link
 show_reminders_test_link: true
+
+# specific to dingus
+api_interface:   'http://api.aboutmde.org/mde-api.php'
+#api_interface:   'http://piero.local/GitHub_projects/markdown-extended/api.aboutmde.org/www/mde-api.php'
+#api_interface:   'mde-api.php'
+# use this to use the webservice at <http://api.aboutmde.org/> instead of local one
+#api_interface:  'online'
