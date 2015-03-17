@@ -1,33 +1,20 @@
-meta_title:         "{META_TITLE}"
-meta_description:   "{META_DESCRIPTION}"
+meta_title:         "MDE dingus"
+meta_description:   "a markdown-extended web editor"
 
 # on the basic model: **Markdown** _extended_ (**<strong>MDE</strong>** _<em>dingus</em>_)
-page_title:         "{PAGE_TITLE}"
-page_link:          "{PAGE_LINK}"
-page_description:   "{PAGE_DESCRIPTION}"
-page_footer:        "{PAGE_FOOTER}"
+page_title:         "**MDE** _<em>dingus</em>_"
+page_link:          "http://dingus.aboutmde.org/"
+page_description:   "a markdown-extended web editor"
+page_footer:        |
+                This editor is a custom version of the original <a href="http://epiceditor.com/" title="See online http://epiceditor.com/">EpicEditor</a>
+                to use the <a href="http://github.com/piwi/markdown-extended" title="See online http://github.com/piwi/markdown-extended">PHP MarkdownExtended</a> parser.
+                It uses the <a href="http://github.com/piwi/mde-service" title="See online http://github.com/piwi/mde-service">MDE-Service</a> PHP interface to post
+                the markdown content of the editor (via a <strong>synchronous</strong> XMLHttpRequest) at each run
+                (the original content is not parsed in JavaScript). You can find the sources of the
+                editor online at <a href="http://github.com/piwi/mde-editor" title="See online http://github.com/piwi/mde-editor">http://github.com/piwi/mde-editor</a>.
+
+
 # use this to change default website.logo
 #page_logo:          ...
 # to show which page is active in the navbar, use the "slug" entry of website.menu
-page_active:        "{PAGE_SLUG}"
-
-contents:
-# a raw content
-- title:        "{CONTENT_TITLE}"
-  description:  "{CONTENT_DESCRIPTION}"
-  intro:        "{CONTENT_INTRO}"
-  content:              "{CONTENT}"
-  notes:
-  - content:            "{CONTENT_NOTE_1}"
-# a markdown file content
-- title:        "{MD_CONTENT_TITLE}"
-  description:  "{MD_CONTENT_DESCRIPTION}"
-  markdown:     Test
-
-modalbox_link:      "{MODALBOX_LINK}"
-modalbox:
-  label:            "{MODALBOX_LABEL}"
-  description:      "{MODALBOX_DESCRIPTION}"
-  title:            "{MODALBOX_TITLE}"
-  content:          "{MODALBOX_CONTENT}"
-  footer:           "{MODALBOX_FOOTER}"
+page_active:        dingus

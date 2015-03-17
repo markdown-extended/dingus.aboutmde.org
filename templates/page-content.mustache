@@ -7,39 +7,23 @@
 </div>
 
 <div class="content" id="page-content" role="main">        
-{{#page.contents}}
 
-    {{#title}}
-    <h2>{{title}}
-        {{#description}}
-        &nbsp; <small><em>{{description}}</em></small>
-        {{/description}}
-    </h2>
-    {{/title}}
-
-    {{#intro}}
-    <div class="lead">{{intro}}</div>
-    {{/intro}}
-
-    <div class="container">
-        {{content}}
+    <form name="mde_form" id="mde_form">
+        <div class="form-group">
+            <div id="mde-editor"></div>
+        </div>
+    </form>
+    <hr>
+    <div class="content">
+        <p class="lead">
+            Use the field above to write your <strong><a href="http://aboutmde.org/" title="What is MDE?">Markdown-Extended</a> content</strong>
+            then click on the <em>eye</em> icon (it appears when the mouse is hover the field)
+            to get the result.
+            You can also use the <strong><em>fullscreen</em> feature</strong> by clicking on the second icon.
+            To <strong>get help</strong> about the MDE syntax, you can read the
+            <a href="markdown_reminders.html" onclick="return mdereminders_popup();" title="Markdown syntax reminders (new floated window)" target="_blank">Markdown syntax reminders</a>.
+        </p>
     </div>
 
-    {{#has_notes}}
-    <ul class="list-group small">
-        {{#notes}}
-        <li class="list-group-item">{{content}}</li>
-        {{/notes}}
-    </ul>
-    {{/has_notes}}
-
-    {{#show_hr}}
-    <hr class="clearfix">
-    {{/show_hr}}
-    {{^show_hr}}
-    <div class="clearfix"></div>
-    {{/show_hr}}
-
-{{/page.contents}}
 </div>
 

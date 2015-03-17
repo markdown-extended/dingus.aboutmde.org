@@ -2,6 +2,8 @@
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="vendor/wow/dist/wow.min.js"></script>
+<script src="vendor/epiceditor/epiceditor/js/epiceditor.min.js"></script>
+<script src="vendor/mde-editor/mde-editor/mde-editor.js"></script>
 <script>
 var mdereminders_window; // use this variable to interact with the cheat sheet window
 function mdereminders_popup(url){
@@ -21,4 +23,35 @@ $(function() {
         .attr('href', website_email)
         .html(website_email);
 });
+
+(function() {
+
+    var opts = {
+        localStorageName: 'mde-editor',
+        basePath: 'epiceditor/epiceditor/',
+        theme: {
+            base: 'themes/base/epiceditor.css',
+            preview: 'themes/preview/github.css',
+            editor: 'themes/editor/epic-dark.css'
+        },
+        autogrow: {
+            minHeight: 300,
+            maxHeight: false,
+            scroll: true
+        },
+        parserOptions: {
+            interface:   'http://piero.local/GitHub_projects/markdown-extended/api.aboutmde.org/www/mde-api.php',
+//            interface:   'mde-api.php',
+//            interface: 'online', // use this to use the webservice at <http://api.aboutmde.org/> instead of local one
+            mdeOptions: {
+//                config_file: 'markdown_config.simple.ini'
+            }
+        }
+    };
+
+    var editor = new MdeEpicEditor(opts);
+    editor.load();
+
+})();
+
 </script>
