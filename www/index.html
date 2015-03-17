@@ -108,12 +108,12 @@ body {
     <hr>
     <div class="content">
         <p class="lead">
-            Use the field above to write your <strong><a href="http://aboutmde.org/" title="What is MDE?">Markdown-Extended</a> content</strong>
+            Use the field above to write your <strong><a href="http:&#x2F;&#x2F;aboutmde.org&#x2F;" title="What is MDE?">Markdown-Extended</a> content</strong>
             then click on the <em>eye</em> icon (it appears when the mouse is hover the field)
             to get the result.
             You can also use the <strong><em>fullscreen</em> feature</strong> by clicking on the second icon.
             To <strong>get help</strong> about the MDE syntax, you can read the
-            <a href="markdown_reminders.html" onclick="return mdereminders_popup();" title="Markdown syntax reminders (new floated window)" target="_blank">Markdown syntax reminders</a>.
+            <a href="http://cheatsheet.aboutmde.org/markdown_reminders.html" onclick="return mdereminders_popup();" title="Markdown syntax reminders (new floated window)" target="_blank">Markdown syntax reminders</a>.
         </p>
     </div>
 
@@ -133,6 +133,7 @@ the markdown content of the editor (via a <strong>synchronous</strong> XMLHttpRe
 (the original content is not parsed in JavaScript). You can find the sources of the
 editor online at <a href="http://github.com/piwi/mde-editor" title="See online http://github.com/piwi/mde-editor">http://github.com/piwi/mde-editor</a>.
 
+                    &dash; <a href="http://cheatsheet.aboutmde.org/markdown_reminders.html" onclick="return mdereminders_popup();" title="Markdown syntax reminders (new floated window)" target="_blank">Markdown syntax reminders</a>
                 </p>
             </div>
             <hr>
@@ -163,7 +164,7 @@ Original <em>MarkdownMark</em> icon made by <a href="http://github.com/dcurtis/m
 <script>
 var mdereminders_window; // use this variable to interact with the cheat sheet window
 function mdereminders_popup(url){
-    if (!url) url='http://reminders.aboutmde.org/popup.html';
+    if (!url) url='http://cheatsheet.aboutmde.org/markdown_reminders.html';
     if (url.lastIndexOf("popup")==-1) url += (url.lastIndexOf("?")!=-1) ? '&popup' : '?popup';
     mdereminders_window = window.open(url, 'markdown_reminders',
         'directories=0,menubar=0,status=0,location=0,scrollbars=1,resizable=1,fullscreen=0,width=840,height=380,left=120,top=120');
@@ -195,9 +196,6 @@ $(function() {
         },
         parserOptions: {
             interface:   'http://api.aboutmde.org/mde-api.php',
-//            interface:   'http://piero.local/GitHub_projects/markdown-extended/api.aboutmde.org/www/mde-api.php',
-//            interface:   'mde-api.php',
-//            interface: 'online', // use this to use the webservice at <http://api.aboutmde.org/> instead of local one
             mdeOptions: {
 //                config_file: 'markdown_config.simple.ini'
             }
