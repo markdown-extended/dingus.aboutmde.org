@@ -1,5 +1,6 @@
 meta_title:         "MDE dingus"
 meta_description:   "a markdown-extended web editor"
+#meta_robots:        none
 
 # on the basic model: **Markdown** _extended_ (**<strong>MDE</strong>** _<em>dingus</em>_)
 page_title:         "**MDE** _<em>dingus</em>_"
@@ -25,7 +26,6 @@ show_reminders_test_link: true
 
 # specific to dingus
 api_interface:   'http://api.aboutmde.org/mde-api.php'
-#api_interface:   'http://piero.local/GitHub_projects/markdown-extended/api.aboutmde.org/www/mde-api.php'
 #api_interface:   'mde-api.php'
 # use this to use the webservice at <http://api.aboutmde.org/> instead of local one
 #api_interface:  'online'
