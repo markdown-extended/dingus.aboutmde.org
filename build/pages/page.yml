@@ -22,7 +22,7 @@ page_footer:        |
 page_active:        dingus
 
 # to show the test reminders link
-show_reminders_test_link: true
+#show_reminders_test_link: true
 
 # specific to dingus
 api_interface:   'http://api.aboutmde.org/mde-api.php'
