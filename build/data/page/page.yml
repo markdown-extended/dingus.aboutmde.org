@@ -24,6 +24,25 @@ page_active:        dingus
 # to show the test reminders link
 #show_reminders_test_link: true
 
+contents:
+- j2:               |
+    <form name="mde_form" id="mde_form">
+        <div class="form-group">
+            <div id="mde-editor"></div>
+        </div>
+    </form>
+    <hr>
+    <div class="content">
+        <p class="lead">
+            Use the field above to write your <strong><a href="{{ website.home }}" title="What is MDE?">Markdown-Extended</a> content</strong>
+            then click on the <em>eye</em> icon (it appears when the mouse is hover the field)
+            to get the result.
+            You can also use the <strong><em>fullscreen</em> feature</strong> by clicking on the second icon.
+            To <strong>get help</strong> about the MDE syntax, you can read the
+            <a href="{{ website.reminders_url|safe }}" onclick="return mdereminders_popup();" title="Markdown syntax reminders (new floated window)" target="_blank">Markdown syntax reminders</a>.
+        </p>
+    </div>
+
 # specific to dingus
 api_interface:   'http://api.aboutmde.org/mde-api.php'
 #api_interface:   'mde-api.php'
