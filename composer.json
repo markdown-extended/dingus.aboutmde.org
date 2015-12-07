@@ -2,9 +2,9 @@
     "minimum-stability": "dev",
     "require": {
         "piwi/markdown-extended": "dev-master",
-        "piwi/mde-editor": "dev-master"
+        "markdown-extended/mde-editor": "dev-master"
     },
     "repositories": [
-        { "type": "vcs", "url": "https://github.com/piwi/mde-editor" }
+        { "type": "vcs", "url": "https://github.com/markdown-extended/mde-editor" }
     ]
 }
